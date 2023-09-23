@@ -1,57 +1,447 @@
 {
   "intents": [
-    {"tag": "greeting",
-     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Ekse", "Hi"],
-     "responses": ["Hi stranger", "Yebo yes, how can I help", "Ey watsupp", "Ekse Hoezit", "Hola", "Hey dude", "You again"]
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Good morning",
+        "Hey",
+        "Greetings",
+        "Hi there",
+        "Howdy",
+        "Hello there",
+        "Hey there",
+        "Hi, how can I help?"
+      ],
+      "responses": [
+        "Hello! How can I assist you?",
+        "Hi there!",
+        "Good morning, how can I help you?",
+        "Hey! How may I assist you?",
+        "Greetings! How can I be of service?",
+        "Hi, what can I do for you?",
+        "Howdy! How can I assist?",
+        "Hello there! How may I help?",
+        "Hey there, how can I assist you today?",
+        "Hi, how can I be of assistance?"
+      ]
     },
-    {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
-     "responses": ["See you!", "Have a nice day", "Sure Bye", "Later dude", "Sayoonara", "Peace out", "Sure dude", "Ciao"]
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Take care",
+        "Farewell",
+        "Till we meet again",
+        "Goodbye, have a great day",
+        "Adios",
+        "See you soon",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later!",
+        "Take care and have a wonderful day!",
+        "Farewell! Until next time.",
+        "Till we meet again! Goodbye.",
+        "Have a great day! Goodbye.",
+        "Adios! Take care.",
+        "See you soon! Goodbye.",
+        "Catch you later! Take care.",
+        "Goodbye, and remember, we're here for you anytime."
+      ]
     },
-    {"tag": "thanks",
-     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure dude"]
+    {
+      "tag": "product_inquiry",
+      "patterns": [
+        "Tell me about product X",
+        "What are the features of product Y?",
+        "Can you describe product Z?",
+        "Product specifications",
+        "How does product A work?",
+        "What's new in product B?",
+        "Is product C available in different colors?",
+        "Can you recommend a product for me?",
+        "I need more information about product D",
+        "Do you have any reviews for product E?"
+      ],
+      "responses": [
+        "Product X is a high-quality item with advanced features such as...",
+        "Product Y offers a range of features, including...",
+        "Product Z is designed to provide...",
+        "Product A functions by...",
+        "Product B has new and improved features, including...",
+        "Yes, product C is available in different colors, such as...",
+        "Certainly, I can recommend product D for you. It's known for...",
+        "Sure, I can provide more information about product E. It has received positive reviews for...",
+        "Product F is popular for its...",
+        "Here are some reviews for product G:...",
+        "Product H is known for its durability and...",
+        "For more details about product I, you can check...",
+        "Product J is a customer favorite due to its...",
+        "Product K comes with a variety of features, like...",
+        "You'll love product L because of its...",
+        "Product M is perfect for...",
+        "Customers love product N for its...",
+        "Product O is highly rated for...",
+        "Product P has received positive feedback for...",
+        "Product Q is the ideal choice for..."
+      ]
     },
-    {"tag": "noanswer",
-     "patterns": [],
-     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "I am still here dude"]
-     },
-     {"tag": "name",
-      "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "Ungubani", "Tell me about yourself", "You are"],
-      "responses": ["I am Karabo", "My name is Karabo", "You can call me KB for short", "I am Karabo, my friends call me KB", "Karabo is my name"]
-      },
-      {"tag": "options",
-       "patterns": ["What do you do", "How can you help", "What do you know", "What is your purpose", "How can you help"],
-       "responses": ["I can tell you about South Africa", "I can give you interesting facts about South Africa"]
-      },
-     {"tag": "south_africa_info",
-      "patterns": ["South Africa", "What can you tell me about SA", "SA", "Tell me about SA", "What about SA", "What do you know about SA", "Tell me more about SA", "What can you tell me about South Africa", "Tell me about South Africa", "What about South Africa", "What do you know about South Africa", "Tell me more about South Africa"],
-      "responses": ["South Africa is the southern most country in Africa, it has a population of more than 59million people and covers an area of 1221 037m2. South Africa has 11 official languages. The currency used in ZAR our South African Rand which trades at about 15ZAR per 1USD."]
-      },
-      {"tag": "south_africa_facts",
-       "patterns": ["South Africa Facts", "SA Facts", "Give me some facts about SA", "Give me some facts about South Africa", "SA Facts", "SA interesting facts", "South Africa facts", "South Africa interesting facts", "Tell me something interesting"],
-       "responses": [
-         "South Africa is now the only country in the world to have hosted the Soccer, Cricket and Rugby World Cup!",
-         "Table Mountain in Cape Town is believed to be one of the oldest mountains in the world and one of the planet’s 12 main energy centres, radiating magnetic, electric or spiritual energy.",
-         "The Cape Floral Kingdom is one of the world’s six floral kingdoms – and the only one which is wholly contained within a single country.",
-         "Some countries have deserts; some have subtropical forests, right? South Africa has: deserts, wetlands, grasslands, bush, subtropical forests, mountains and escarpments.",
-         "South Africa’s drinking water is rated 3rd best in the world for being safe and ready to drink.",
-         "Water is not all there is to drink in this thirsty country! South Africa’s Cape Winelands have around 560 wineries and 4 400 primary producers. Included in the Cape Winelands region is Route 62, considered the longest wine route in the world. That alone is good reason to visit South Africa if you haven’t yet been!",
-         "What about beer? South African brewery SABMiller ranks – by volume – as the largest brewing company in the world. Saffers love their beer…but the real reason the brewery is so big? SABMiller also supplies up to 50% of China’s beer.",
-         "South Africa is the only country in the entire world that has voluntarily abandoned its nuclear weapons programme.",
-         "The world’s largest themed resort hotel in the world – The Palace of the Lost City – is found in South Africa. Surrounding the Palace is a 25 hectare manmade botanical jungle with almost 2 million plants, trees and shrubs.",
-         "South Africa is extremely rich in mining and minerals and considered the world’s leader with nearly 90% of all the platinum metals on earth and around 41% of all the world’s Gold!",
-         "South Africa is home to the oldest meteor scar in the world – the Vredefort Dome in a town called Parys. The site is a UNESCO World Heritage Site.",
-         "The South African Rovos Rail is considered the most luxurious train in the world.",
-         "South Africa is home to the highest commercial bungi jump in the world at 710 feet.",
-         "General Motors South Africa is the only place outside of the USA to build the Hummer H3!",
-         "Despite the country’s status as a democratic republic, the Province of KwaZulu-Natal has a monarchy, specially provided for by the Constitution. Goodwill Zwelithini kaBhekuzulu is the King of the Zulu Nation, has 27 kids and 6 wives and lives, literally, like a King!",
-         "There are more than 2000 shipwrecks off the South African coast, most dating back at least 500 years.",
-         "The oldest remains of modern humans were found in South Africa and are well over 160,000 years old.",
-         "The Karoo region in the Western Cape is home to some of the best fossils of early dinosaurs. In fact, it is estimated that some 80% of the mammalian fossils found to date were found in the Karoo.",
-         "SA has three capital cities: Pretoria is the Executive Capital, Cape Town the Legislative Capital and Bloemfontein the judicial Capital.",
-         "Can you think of any other place in the world where two Nobel Peace Prize winners lived on the same street? Both Nelson Mandela and Archbishop Desmond Tutu had houses on Vilakazi Street in Soweto"
-       ]
-      }
+    {
+      "tag": "price_inquiry",
+      "patterns": [
+        "What is the price of product X?",
+        "How much does product Y cost?",
+        "Price of item Z?",
+        "Any discounts available?",
+        "Tell me about the pricing",
+        "Are there any special offers?",
+        "What are the prices of your products?",
+        "I'm interested in product A. How much is it?",
+        "Are there any ongoing promotions?",
+        "Do you offer any deals or discounts?"
+      ],
+      "responses": [
+        "The price of product X is $XX.XX",
+        "Product Y is priced at $YY.YY",
+        "Item Z costs $ZZ.ZZ",
+        "We are currently offering discounts on some products. Check our website for more details.",
+        "Our pricing is competitive and offers great value for the quality of products.",
+        "Yes, there are special offers available. Visit our website to see the latest deals.",
+        "For information on prices, please refer to our website's product pages.",
+        "Product A is priced at $AA.AA",
+        "Yes, we currently have ongoing promotions. Visit our website to find out more.",
+        "Yes, we offer deals and discounts on selected products. Check our promotions page for more information.",
+        "The prices of our products range from $BB.BB to $CC.CC, depending on the item."
+      ]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": [
+        "I have an issue with my order",
+        "Can you help with a problem?",
+        "Customer support",
+        "Order hasn't arrived",
+        "Returns and refunds",
+        "How can I contact customer support?",
+        "I need assistance with a return",
+        "My order is missing an item",
+        "I received a damaged product",
+        "What's the status of my refund?"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Please provide more details about the issue so I can assist you better.",
+        "Of course, I'm here to help. Please describe the problem you're facing with your order.",
+        "Our customer support team is available to assist you with any issues related to your order. Please reach out to them at support@example.com.",
+        "If your order hasn't arrived on time, please track the shipment using the provided tracking number or contact our customer support for further assistance.",
+        "For information on returns and refunds, please visit our website's return policy page.",
+        "You can contact our customer support team by emailing support@example.com or calling our helpline at 123-456-7890.",
+        "I apologize for any inconvenience caused. Please initiate a return process through our website, and our team will guide you through it.",
+        "We apologize for the oversight. Kindly reach out to our customer support, and we'll rectify the missing item issue.",
+        "I'm sorry to hear that your product arrived damaged. Please contact our customer support for a replacement or refund.",
+        "The status of your refund can be checked by logging into your account on our website or contacting our customer support."
+      ]
+    },
+    {
+      "tag": "promotion_offer",
+      "patterns": [
+        "Are there any ongoing promotions?",
+        "Tell me about current offers",
+        "Are there any discounts available?",
+        "Promotional deals",
+        "Special offers",
+        "Show me your best deals",
+        "What promotions are available?",
+        "Any sales happening?",
+        "Are there any buy-one-get-one-free deals?",
+        "Can I get a discount on bulk orders?"
+      ],
+      "responses": [
+        "Yes, we currently have several promotions and discounts running. Visit our website to see the latest offers.",
+        "Our ongoing promotions include discounts on selected items and free shipping on orders above a certain amount.",
+        "Take advantage of our special offers and save on your purchases.",
+        "Hurry! Limited-time promotions are available on various products.",
+        "Subscribe to our newsletter to receive exclusive deals and promotions.",
+        "Here are some of our best deals at the moment:...",
+        "You can find information about our ongoing promotions on our website's promotions page.",
+        "Yes, there are sales happening now. Check our website for the latest offers.",
+        "We currently have buy-one-get-one-free deals on selected items. Grab them before they're gone!",
+        "For bulk orders, we offer special discounts. Please contact our sales team for more information."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I have feedback",
+        "Can I provide feedback?",
+        "Feedback on my purchase",
+        "Leave a review",
+        "Rate your service",
+        "How can I leave feedback?",
+        "Your service was excellent",
+        "Can I give feedback on the website?",
+        "Where can I review your products?",
+        "How can I rate my shopping experience?"
+      ],
+      "responses": [
+        "We appreciate your feedback. Please share your thoughts with us, and we'll take it into consideration for further improvements.",
+        "Feedback from customers like you helps us enhance our services. Feel free to leave your feedback.",
+        "Your feedback is valuable to us. Please take a moment to leave a review on our website.",
+        "We value your opinion. You can rate our service on a scale of 1 to 5 stars.",
+        "Thank you for providing feedback. It helps us understand our customers' needs and expectations better.",
+        "You can leave feedback by logging into your account on our website and visiting the feedback section.",
+        "We're glad you had an excellent experience with our service!",
+        "Yes, you can leave feedback about our website. We appreciate any suggestions for improvement.",
+        "You can review our products on the respective product pages on our website.",
+        "To rate your shopping experience, go to our website's feedback form and share your thoughts."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Can you check my order status?",
+        "Where is my order?",
+        "Track my package",
+        "Order shipment details",
+        "Delivery information",
+        "How do I track my order?",
+        "I want to know when my order will arrive",
+        "What's the estimated delivery time?",
+        "Can I change the shipping address for my order?",
+        "When will my order be shipped?"
+      ],
+      "responses": [
+        "Sure, I can help you with that. Please provide your order number, and I'll check the status for you.",
+        "To track your package, use the provided tracking number on our website's order tracking page.",
+        "For order shipment details and delivery information, enter your order number on our website.",
+        "To know the current status of your order, visit our website and enter your order details.",
+        "I can assist you in finding your order status. Please provide your order number.",
+        "You can track your order by logging into your account on our website and navigating to the order tracking section.",
+        "Your order is on its way! You can track the shipment using the tracking number provided in your order confirmation email.",
+        "The estimated delivery time for your order is approximately X days.",
+        "Sure, you can change the shipping address for your order. Please contact our customer support to make the necessary changes.",
+        "Once your order is shipped, you'll receive a confirmation email with the tracking details."
+      ]
+    },
+    {
+      "tag": "new_arrivals",
+      "patterns": [
+        "What's new on your website?",
+        "Do you have any new arrivals?",
+        "Show me the latest products",
+        "What are the new releases?",
+        "Any fresh collections?",
+        "I'm looking for new products",
+        "Can you recommend the latest items?",
+        "What's trending now?",
+        "What's hot on your store?",
+        "Any exciting launches?"
+      ],
+      "responses": [
+        "We've recently added some exciting new products to our website. Check them out!",
+        "Yes, we have new arrivals in our store. Explore the latest collections now.",
+        "Behold the latest additions to our product range! Don't miss out on these fresh releases.",
+        "Discover the newest products on our website. There's something for everyone.",
+        "Explore our fresh collections, carefully curated for you.",
+        "If you're looking for new products, you're in the right place! Check out our latest additions.",
+        "Certainly! Here are some of the latest items we have on offer.",
+        "Find out what's trending now. Browse our latest arrivals to stay up-to-date with the latest trends.",
+        "Get your hands on the hottest products available right now.",
+        "We've got some exciting launches lined up. Stay tuned for the latest releases!"
+      ]
+    },
+    {
+      "tag": "shipping_information",
+      "patterns": [
+        "What are your shipping options?",
+        "Do you offer free shipping?",
+        "How long does shipping take?",
+        "Shipping fees",
+        "Can I track my shipment?",
+        "Shipping to international locations",
+        "Shipping within the country",
+        "What's your delivery process?",
+        "What courier service do you use?",
+        "Any shipping discounts?"
+      ],
+      "responses": [
+        "We offer various shipping options, including standard and express shipping.",
+        "Yes, we offer free shipping on orders above a certain amount. Check our website for more details.",
+        "Shipping times may vary depending on your location and the chosen shipping method. Please refer to our website for estimated delivery times.",
+        "Shipping fees are determined based on the shipping method and delivery location. You can find more information on our website.",
+        "Yes, you can track your shipment using the provided tracking number. Simply visit our order tracking page.",
+        "We provide international shipping to select countries. You can find the list of countries we ship to on our website.",
+        "We offer shipping within the country to most locations.",
+        "Our delivery process involves carefully packing and dispatching your order for prompt delivery.",
+        "We use reliable courier services to ensure your order reaches you safely and on time.",
+        "Occasionally, we offer shipping discounts or promotions. Stay updated on our website for any ongoing offers."
+      ]
+    },
+    {
+      "tag": "product_comparison",
+      "patterns": [
+        "What's the difference between product A and product B?",
+        "Can you compare product X and product Y?",
+        "Feature comparison",
+        "Which one is better: product Z or product A?",
+        "Comparing specifications",
+        "Pros and cons of product B",
+        "Help me choose between product C and product D",
+        "Comparative analysis of product E and product F",
+        "Product reviews and ratings",
+        "Comparison chart"
+      ],
+      "responses": [
+        "Product A and product B have some key differences. Here's a comparison of their features...",
+        "Certainly! Let's compare the specifications of product X and product Y...",
+        "Get an in-depth feature comparison of the products you're interested in...",
+        "Both product Z and product A are great choices, but let's see how they differ...",
+        "Here's a side-by-side comparison of the specifications to help you make an informed decision...",
+        "Product B has its own set of advantages and disadvantages. Here's a breakdown...",
+        "Deciding between product C and product D? Let's compare their features...",
+        "We'll provide a detailed analysis of product E and product F to help you choose...",
+        "Check out the reviews and ratings for the products you're considering...",
+        "A comparison chart for the products is available on our website. Take a look!"
+      ]
+    },
+    {
+      "tag": "bulk_orders",
+      "patterns": [
+        "Do you offer discounts on bulk orders?",
+        "Can I get a bulk discount?",
+        "Bulk pricing",
+        "Wholesale orders",
+        "Is there a minimum quantity for bulk orders?",
+        "How can I place a bulk order?",
+        "Bulk purchase benefits",
+        "I need to order in large quantities",
+        "Special pricing for wholesale",
+        "Can you assist with a bulk order?"
+      ],
+      "responses": [
+        "Yes, we offer discounts on bulk orders. The more you order, the higher the discount.",
+        "Bulk discounts are available. The larger the quantity, the better the discount.",
+        "For bulk pricing, please contact our sales team directly.",
+        "For wholesale orders, please reach out to our sales department.",
+        "There might be a minimum order quantity for bulk orders. Please contact our sales team for more details.",
+        "To place a bulk order, kindly get in touch with our sales team through the contact information on our website.",
+        "Bulk purchases come with various benefits, including discounted pricing and priority support.",
+        "If you need to order in large quantities, we're here to assist you throughout the process.",
+        "Special pricing is available for wholesale customers. Please contact our sales team for more information.",
+        "Of course, we'd be happy to help you with your bulk order. Please let us know your requirements."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "What payment methods do you accept?",
+        "Can I pay with credit card?",
+        "Payment options",
+        "Do you support PayPal payments?",
+        "Accepted payment gateways",
+        "Can I use debit card for payment?",
+        "Is cash on delivery available?",
+        "Secure payment process",
+        "Payment-related queries",
+        "Which cards do you accept?"
+      ],
+      "responses": [
+        "We accept various payment methods, including credit cards, debit cards, PayPal, and more.",
+        "Yes, you can pay for your order using a credit card.",
+        "We offer multiple payment options for your convenience.",
+        "Yes, we support payments through PayPal.",
+        "We use secure payment gateways to process your transactions.",
+        "You can use a debit card for payment on our website.",
+        "Cash on delivery is available for select locations. Please check if it's available in your area during checkout.",
+        "Our payment process is secure and encrypted to protect your financial information.",
+        "If you have any payment-related queries, our customer support team is here to assist you.",
+        "We accept major credit cards, such as Visa, Mastercard, and American Express, among others."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "Is product X in stock?",
+        "Availability of item Y",
+        "Can I check product Z's availability?",
+        "Out of stock products",
+        "When will product A be back in stock?",
+        "Notify me when product B is available",
+        "Limited stock",
+        "Product C availability status",
+        "How can I find out if product D is available?",
+        "Can I pre-order product E?"
+      ],
+      "responses": [
+        "Product X is currently in stock and available for purchase.",
+        "Item Y is currently available in our inventory.",
+        "To check the availability of product Z, please visit the product page on our website.",
+        "We apologize, but product A is currently out of stock. Please check back later.",
+        "The restocking date for product B will be announced on our website.",
+        "You can sign up for notifications, and we'll let you know when product B is back in stock.",
+        "Hurry! There's limited stock available for product C.",
+        "The availability status of product C is 'in stock'.",
+        "You can find out if product D is available by visiting our website or contacting our customer support.",
+        "Pre-orders for product E are not available at the moment."
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": [
+        "Can you recommend a product for me?",
+        "I need suggestions for product X",
+        "What do you suggest I buy?",
+        "Looking for product Y",
+        "Bestselling items",
+        "Most popular products",
+        "Top-rated products",
+        "Customers also bought",
+        "Product Z alternatives",
+        "Similar products to A"
+      ],
+      "responses": [
+        "Sure, I can recommend a product based on your preferences. What are you looking for?",
+        "If you tell me more about your requirements, I can suggest the best product for you.",
+        "What type of product are you interested in? I'll be happy to give you some suggestions.",
+        "Product Y is a great choice! Can I assist you with anything else?",
+        "Check out our bestselling items. They're loved by customers!",
+        "Here are some of our most popular products that other customers have loved.",
+        "Discover our top-rated products that have received positive feedback from customers.",
+        "Customers who bought product Z also purchased these items.",
+        "Looking for alternatives to product A? Here are some similar products you might like.",
+        "If you're interested in product A, you may also like these items."
+      ]
+    },
+    {
+      "tag": "order_cancelation",
+      "patterns": [
+        "Can I cancel my order?",
+        "How do I cancel an order?",
+        "Order cancellation policy",
+        "Cancel my recent order",
+        "Can I change my mind and cancel an order?",
+        "What's the deadline for canceling an order?",
+        "Cancelation process",
+        "Refund for canceled orders",
+        "Is there a fee for order cancellation?",
+        "Can I modify my order before canceling?"
+      ],
+      "responses": [
+        "Yes, you can cancel your order before it is shipped. Please contact our customer support for assistance.",
+        "To cancel an order, you can log into your account and follow the cancelation process in the order history section.",
+        "Our order cancellation policy allows you to cancel an order before it is dispatched.",
+        "We can cancel your recent order as long as it has not been shipped. Please contact us for cancelation.",
+        "Yes, you have the option to change your mind and cancel an order before it is shipped.",
+        "The deadline for canceling an order is usually before it is shipped. Contact our support team for details.",
+        "The cancelation process can be completed by logging into your account and accessing the order section.",
+        "Refunds for canceled orders are processed according to our refund policy.",
+        "Order cancellation is generally free of charge, but please check our terms and conditions for specifics.",
+        "Before canceling, you can modify your order if needed. After cancelation, the order cannot be modified."
+      ]
+    }
   ]
 }
